@@ -74,3 +74,4 @@ Wenn alles korrekt eingerichtet ist, sollte die HTML-Seite angezeigt werden, die
 
 Durch dieses Projekt habe ich gelernt, wie man ein Dockerfile erstellt und ein Docker-Image baut, wie man Apache im Container zum Laufen bringt, wie man lokale Verzeichnisse in den Container einbindet (Volumes), und wie man über Portweiterleitung eine Webseite von aussen erreichbar macht.
 
+![image](https://github.com/user-attachments/assets/a2cf68b0-34dd-41f0-9208-a684c0218ce0)
