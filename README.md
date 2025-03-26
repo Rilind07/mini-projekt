@@ -1,6 +1,6 @@
 # Docker Mini-Projekt – Apache Webserver
 
-In diesem Mini-Projekt wird ein kleiner Apache-Webserver mit Docker erstellt. Die Webseite soll später über Port 8080 erreichbar sein. Zusätzlich sollen die Website-Dateien und die Logdateien außerhalb des Containers gespeichert werden, damit sie direkt zugänglich sind.
+In diesem Mini-Projekt wird ein kleiner Apache-Webserver mit Docker erstellt. Die Webseite soll später über Port 8080 erreichbar sein. Zusätzlich sollen die Website-Dateien und die Logdateien ausserhalb des Containers gespeichert werden, damit sie direkt zugänglich sind.
 
 ## 1. Verzeichnis für das Projekt erstellen
 
@@ -50,7 +50,7 @@ docker run -d --name mein_webserver -p 8080:80 \
 -v /home/vmadmin/webserver_mini_projekt/public-html:/usr/local/apache2/htdocs/ \
 -v /home/vmadmin/webserver_mini_projekt/logs:/var/log/apache2/ \
 mein-projekt
-Dabei wird der Container "mein_webserver" genannt. Port 8080 des Hostsystems wird mit Port 80 im Container verbunden. Außerdem werden zwei lokale Verzeichnisse eingebunden: Eines für die Webseite (public-html) und eines für die Apache-Logdateien (logs).
+Dabei wird der Container "mein_webserver" genannt. Port 8080 des Hostsystems wird mit Port 80 im Container verbunden. Ausserdem werden zwei lokale Verzeichnisse eingebunden: Eines für die Webseite (public-html) und eines für die Apache-Logdateien (logs).
 
 ## 5. HTML-Webseite erstellen
 
@@ -68,9 +68,9 @@ Zum Testen wird im Browser die folgende Adresse aufgerufen:
 
 http://localhost:8080
 
-Wenn alles korrekt eingerichtet ist, sollte die HTML-Seite angezeigt werden, die sich außerhalb des Containers im Verzeichnis public-html befindet.
+Wenn alles korrekt eingerichtet ist, sollte die HTML-Seite angezeigt werden, die sich ausserhalb des Containers im Verzeichnis public-html befindet.
 
 ## 7. Erkenntnisse aus dem Projekt
 
-Durch dieses Projekt habe ich gelernt, wie man ein Dockerfile erstellt und ein Docker-Image baut, wie man Apache im Container zum Laufen bringt, wie man lokale Verzeichnisse in den Container einbindet (Volumes), und wie man über Portweiterleitung eine Webseite von außen erreichbar macht.
+Durch dieses Projekt habe ich gelernt, wie man ein Dockerfile erstellt und ein Docker-Image baut, wie man Apache im Container zum Laufen bringt, wie man lokale Verzeichnisse in den Container einbindet (Volumes), und wie man über Portweiterleitung eine Webseite von aussen erreichbar macht.
 
